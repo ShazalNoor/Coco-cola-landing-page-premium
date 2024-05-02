@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		html,body
+		{
+			width: 100%;
+			height: 100%;
+			background-color: black;
+
+		}
+		#main
+		{
+			height: 100%;
+			width: 100%;
+		}
+		#nav
+		{
+			/*background-color: grey;*/
+			height: 110px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+
+		}
+		#nav-pt1
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+		#nav-pt1 h2
+		{
+			font-size: 40px;
+			color: white;
+			margin-right: 600px;
+			margin-left: 50px;
+
+		}
+		#nav-pt1 h5
+		{
+			/*background-color: blue;*/
+			margin-left: 70px;
+			font-size: 21px;
+			font-weight: 500;
+			color: white;
+
+		}
+		#nav-pt1 button
+		{
+			background-color: #696969;
+			color: white;
+			padding: 10px 20px;
+			margin-left: 570px;
+
+			border-radius: 20px;
+			font-size: 15px;
+
+
+		}
+		#content
+		{
+			width: 100%;
+			height: calc(100% - 110px);
+			/*background-color: blue;*/
+			
+			position: relative;
+			
+		}
+		
+		#left h5
+		{
+			font-size: 35px;
+			font-weight: 600;
+
+			color: white;
+			padding-top: 600px;
+			padding-left: 90px;
+
+
+		}
+		#center-text
+		{
+			margin-top: -450px;
+			margin-left: 300px;
+		}
+		#center-text h4
+		{
+			font-size: 250px;
+			text-transform: uppercase;
+			color: white;
+		}
+		#right
+		{
+			padding-top: 150px;
+			padding-left: 1550px;
+		}
+		#right h4
+		{
+			font-size: 25px;
+			color: white;
+			font-weight: 400;
+			line-height:25px ;
+		}
+		
+		#imb 
+		{
+			width: 25%;
+			height: 50%;
+			background-color: darkorange;
+			position: absolute;
+			left: 36%;
+			top: 85%;
+			border-radius: 50%;
+			filter: blur(130px);
+
+
+		}
+		#imb1 img
+		{
+		    height: 115%;
+			position: absolute;
+			top: 8%;
+			left: 24%;
+			bottom: 5%;	
+		}
+		#next-sec
+		{
+			width:100%;
+			height: 100%;
+			background-color: #1B1B1B;
+			/*border: 2px solid white;*/
+			margin-top: 80px;
+			display: flex;
+
+			
+		}
+		#left1
+		{
+			width: 20%;
+			height: 30%;
+			/*background-color: yellow;*/
+			margin-top: 420px;
+			margin-left: 100px;
+
+		}
+		#left1 h4
+		{
+			font-size: 19px;
+			color: white;
+			padding-bottom: 10px;
+		}
+		#left1 p 
+		{
+			font-size: 13px;
+			color: whitesmoke;
+			padding-bottom: 20px;
+		}
+		#left1 h5
+		{
+			color: dimgrey;
+			border-bottom: 1px solid dimgrey;
+			width: 19%;
+		}
+		#next-sec button
+		{
+			padding: 15px 38px;
+			background-color:white;
+			margin-left: 830px;
+			font-size: 23px;
+			position: absolute;
+			top: 130%;
+
+			border-radius: 30px;
+
+		}
+		#center1
+		{
+			width: 30%;
+			height: 50%;
+			/*border: 2px solid white;*/
+			margin-top: 400px;
+			margin-left: 150px;
+		}
+		#cen-bac
+		{
+			width: 55%;
+			height:80%;
+			background-color: red;
+			margin-left: 120px;
+			margin-top: 80px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-top-left-radius: 70px;
+			border-top-right-radius: 70px;
+			background-image: url('amzon-alexa.jpg');
+			background-size: 190%;
+			background-position: 50% 70%;
+			background-repeat: no-repeat;
+
+		}
+		#right1
+		{
+			width: 20%;
+			height: 30%;
+			/*background-color: red;*/
+			margin-top: 420px;
+			margin-left: 100px;
+
+		}
+		#right1 h4
+		{
+			font-size: 19px;
+			color: white;
+			line-height: 21px;
+			padding-bottom: 10px;
+		}
+		#right1 p 
+		{
+			font-size: 13px;
+			color: whitesmoke;
+			
+		}
+		#next-sec1
+		{
+			width:100%;
+			height: 100%;
+			/*border: 2px solid white;*/
+		}
+		#next-sec1 h5
+		{
+			font-size: 47px;
+			font-weight: 500;
+			color: white;
+			padding: 80px 110px;
+			line-height: 48px;
+		}
+		#next-sec1bac
+		{
+			width: 90%;
+			height: 67%;
+			background-color: white;
+			background-image: url('alex1.jpg');
+			background-position: 25% 90%;
+			background-repeat: no-repeat;
+			background-size:100%;
+			margin-left: 116px;
+			margin-top: -20px;
+		}
+		#center-text1
+		{
+			width: 28%;
+			height: 35%;
+			/*border:2px solid white;*/
+			margin-top: 60px;
+			margin-left: 1200px;
+		}
+		#center-text1 h4
+		{
+			font-size: 21px;
+			color: #5F5F5F;
+			padding-bottom: 10px;
+
+		}
+		#center-text1 p
+		{
+			font-size: 15px;
+			color: #525252;
+		}
+		#center-text1 h3
+		{
+			font-size: 15px;
+			color: #848484;
+			margin-top: 20px;
+			border-bottom: 1px solid #848484;
+			width: 16%;
+		}
+		#next-sec2
+		{
+			width: 100%;
+			height: 80%;
+			/*background-color: white;*/
+			/*border:2px solid white;*/
+			margin-top: 300px;
+
+		}
+		#next-sec2 h3
+		{
+			color: #C1C1C1;
+			font-size: 37px;
+			font-weight: 300;
+			line-height: 41px;
+			margin-left: 120px;
+		}
+		#next-sec2 img
+		{
+			position: absolute;
+			height: 47%;
+			top: 345%;
+			left: 7%;
+		}
+		#next-sec3
+		{
+			margin-top: 50px;
+		}
+		
+		#h1
+		{
+			color: white;
+			font-size: 27px;
+			font-weight: 300;
+			border-bottom: 1px solid #9ba6a5;
+			width: 24%;
+			height: 50px;
+			opacity: 0.4;
+			margin-left: 900px;
+			
+		}
+		#h2
+		{
+			color: white;
+			font-size: 27px;
+			font-weight: 300;
+			padding-top: 40px;
+			border-bottom: 1px solid #9ba6a5;
+			width: 24%;
+			height: 100px;
+			opacity: 0.6;
+			margin-left: 900px;
+			
+		}
+		#h3
+		{
+			color: white;
+			font-size: 27px;
+			font-weight: 300;
+			padding-top: 40px;
+			border-bottom: 1px solid #9ba6a5;
+			width: 24%;
+			height: 100px;
+			opacity: 0.4;
+			margin-left: 900px;
+		}
+		#h4
+		{
+		    color: white;
+			font-size: 27px;
+			font-weight: 300;
+			padding-top: 40px;
+			border-bottom: 1px solid #9ba6a5;
+			width: 24%;
+			height: 100px;
+			opacity: 0.4;	
+			margin-left: 900px;
+		}
+		#next-sec4
+		{
+			width: 100%;
+			height: 100%;
+			background-color: #1B1B1B;
+			margin-top: 5%;
+
+		}
+		#next-sec4L 
+		{
+			width: 25%;
+			height: 90%;
+			/*background-color: red;*/
+			padding: 60px 20px;
+			margin-left: 130px;
+		}
+		#next-sec4L img
+		{
+			position: absolute;
+			height: 7%;
+			top: 407%;
+			left: 7%;
+			border-radius: 50%;
+			margin-left: 30px;
+
+		}
+		#next-sec4L h1
+		{
+			font-size: 17px;
+			padding: 10px 90px;
+			color: white;
+			font-weight: 600;
+			line-height: 20px;
+
+
+		}
+		#next-sec4L span 
+		{
+			color: white;
+			opacity: 0.4;
+			font-weight: 300;
+		}
+		#next-sec4LL img 
+		{
+			height: 40%;
+			position: absolute;
+			top: 420%;
+			left: 5%;
+			transform: rotate(-15deg);
+		}
+		#blur-e
+		{
+			width: 300px;
+			height: 300px;
+			background-color:darkorange;
+			border-radius:50% ;
+			filter: blur(140px);
+			opacity: 0.7;
+			
+			border-bottom-right-radius: 700px;
+			border-top-right-radius: 700px;
+			border-top-left-radius:0px ;
+			border-bottom-left-radius: 0px;
+		    position: absolute;
+		    left: 0;
+		    top: 455%;
+		}
+		#next-sec4R
+		{
+			width: 30%;
+			height: 50%;
+			/*background-color: yellow;*/
+			padding: 20px 40px;
+			margin-left: 1200px;
+			margin-top: -480px;
+		}
+		#next-sec4R p 
+        {
+        	font-size: 30px;
+        	color: #8B8B8B;
+        }
+        #next-sec4R i 
+        {
+        	font-size: 37px;
+        	margin-right: 10px;
+        	margin-left: 10px;
+        }
+
+		
+
+		
+		
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="nav">
+			<div id="nav-pt1">
+				<h2>SNS</h2>
+				<h5>Streamer</h5>
+				<h5>Speaker</h5>
+				<h5>Remote</h5>
+				<button>Sing in</button>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="left">
+				<h5>Enjoy.</h5>
+			</div>
+			<div id="center-text">
+				<h4>Homepod</h4>
+			</div>
+			<div id="right">
+				<h4>Hightfidelity Audio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Everywhere</h4>
+
+				
+			</div>
+			
+			<div id="imb">
+				
+				
+			</div>
+			<div id="imb1">
+				<img src="alexa.png">
+				
+			</div>
+				<div id="next-sec">
+					<div id="left1">
+						<h4>Amazon Room Smart Speaker with Voice Control,</h4>
+						<p> Alexa is one of the platforms available.The sheer number of supported devices that play nicely within its ecosystem makes it an extremely powerful gateway to the smart home. Before you can enjoy it, though, you're going to need some smart home devices.</p>
+						<h5>Read more</h5>
+					</div>
+					<div id="center1">
+						<div id="cen-bac">
+							
+						</div>
+					</div>
+					<div id="right1">
+						<h4>The 2024 Second-Generation<br> HomePod</h4>
+						<p>Alexa is Amazon’s cloud-based voice service available on more than 100 million devices from Amazon and third-party device manufacturers. With Alexa, you can build natural voice experiences that offer customers a more intuitive way to interact with the technology they use every day.</p>
+					</div>
+					<button>Order Now</button>
+				</div>	
+
+				<div id="next-sec1">
+					<h5>Best of year Award <br>winner ALEXA</h5>
+					<div id="next-sec1bac">
+						
+					</div>
+					<div id="center-text1">
+						<h4>Smart technology at your front door.</h4>
+						<p>Your smart home should just work, regardless of the smart device brands you choose. That’s why Alexa supports multiple ways to connect them, including Wi-Fi, Bluetooth Low Energy, Zigbee, and now Matter, meaning more products than ever work with Alexa.Alexa can give you helpful suggestions about your connected smart devices.</p>
+						<h3>Read more</h3>
+						
+					</div>
+
+				</div>
+				<div id="next-sec2">
+					<h3>We have smarter features that<br> compared to others brands.</h3>
+					<img src="alex2.jpg"width="21%"height="50%">
+					<div id="next-sec3"> 
+					<h4 id="h1">1.Order online,as much as you want.</h4>
+					<h4 id="h2">2.Get all the information in the app.</h4>
+					<h4 id="h3">3.Get notified of your delivery.</h4>
+					<h4 id="h4">4.Enjoy worryfree deliveries.</h4>
+					</div>
+
+					<div id="next-sec4">
+						<div id="next-sec4L">
+							<img src="cover.jpg" >
+							<h1>Cameron Williameon<br><span>Binland.Ltd</span></h1>
+							<div id="next-sec4LL">
+								<img src="alexa.png">
+							</div>
+							<div id="blur-e">
+								
+							</div>
+							
+							
+						</div>
+						<div id="next-sec4R">
+							<p><i class="ri-double-quotes-l"></i>Amazon Alexa is a cloud-based voice assistant, so once the wake word is triggered, whether the user actually invoked it or not, the audio starts to be streamed to the cloud for Alexa speech recognition and natural language understanding to happen.<i class="ri-double-quotes-r"></i></p>
+						</div>
+						
+					</div>
+
+					
+
+
+					
+				</div>		
+		</div>		
+	</div>
+	      
+	
+</body>
+</html>
